@@ -26,7 +26,7 @@ export default function Banner() {
             GARTEN- UND LANDSCHAFTSBAU STROE
           </h1>
           <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-white/90 px-2">
-            ROBUST. STARK. STROE. – IHR PARTNER FÜR GARTEN & LANDSCHAFTSBAU.
+            ROBUST, SCHNELL & STARK
           </p>
           <Link href="https://tidycal.com/team/stroe/galabau" target="_blank">
             <Button
