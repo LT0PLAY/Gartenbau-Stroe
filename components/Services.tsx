@@ -35,7 +35,7 @@ const services = [
         "Garten- und Landschaftsbau Stroe steht für Zuverlässigkeit, Kreativität und Leidenschaft für schöne Außenbereiche. Ob in München, im Süden der Stadt oder im grünen Umland – wir sind Ihr Ansprechpartner für Gartengestaltung mit Charakter und Qualität. Lassen Sie uns gemeinsam Ihren Traumgarten verwirklichen."
     }
   ],
-  image: "/Pictures/Hintergrund-1.webp",
+  image: "/Pictures/GARTENGESTALTUNG_UND-PLANUNG.webp",
   icon: "/Pictures/Gartengestaltung.webp"
   },
   {
@@ -62,7 +62,7 @@ const services = [
         "Ob im Raum München, im südlichen Landkreis oder im Umland – wir sind Ihr verlässlicher Partner für vorbereitende Arbeiten im Gartenbau. Garten- und Landschaftsbau Stroe steht für gründliche Vorbereitung, termintreue Umsetzung und langlebige Qualität. Vereinbaren Sie jetzt Ihren Termin und legen Sie mit uns die Grundlage für ein gelungenes Gartenprojekt."
     }
   ],
-  image: "/Pictures/Hintergrund-4.webp",
+  image: "/Pictures/ERDARBEITEN_UND_BODENBEARBEITUNG.webp",
   icon: "/Pictures/Erdarbeiten.webp"
 },
   {
@@ -89,8 +89,8 @@ const services = [
         "Ob modernes Betonpflaster, rustikaler Klinker oder edler Naturstein – wir beraten Sie individuell und setzen Ihre Wünsche mit höchster Sorgfalt und viel Liebe zum Detail um. Unsere Pflasterflächen sind stabil, pflegeleicht und ein optischer Gewinn für jedes Grundstück. Vertrauen Sie auf Garten- und Landschaftsbau Stroe – Ihren Partner für präzise Pflasterarbeiten mit Stil, Struktur und Qualität."
     }
   ],
-  image: "/Pictures/Hintergrund-1.webp",
-  icon: "/Pictures/Pflastersteine.webp"
+  image: "/Pictures/PFLASTER-UND_WEGEBAU.webp",
+  icon: "/Pictures/Pflastersteine1.webp"
   },
   {
   title: "BEGRÜNUNG UND BEPFLANZUNG",
@@ -116,8 +116,8 @@ const services = [
         "Egal ob Neuanlage oder Umgestaltung – wir beraten Sie individuell und setzen gezielt Akzente, die Ihre Außenfläche lebendig machen. In der Region rund um München sind wir Ihr zuverlässiger Ansprechpartner für Begrünung mit Konzept. Lassen Sie sich inspirieren und entdecken Sie, wie wirkungsvoll Pflanzen Atmosphäre schaffen können."
     }
   ],
-  image: "/Pictures/Hintergrund-4.webp",
-  icon: "/Pictures/Begrünung.webp"
+  image: "/Pictures/BEGRÜNUNG_UND_BEPFLANZUNG.webp",
+  icon: "/Pictures/Begruenung.webp"
   },
   {
   title: "TEICH- UND WASSERANLAGEN",
