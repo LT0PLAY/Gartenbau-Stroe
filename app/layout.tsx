@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Ihre Firma - Professionelle Dienstleistungen',
+  title: 'GARTEN- UND LANDSCHAFTSBAU STROE',
   description: 'Ihre vertrauenswürdige Anlaufstelle für professionelle Dienstleistungen',
 };
 

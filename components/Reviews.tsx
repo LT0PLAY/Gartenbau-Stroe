@@ -14,17 +14,19 @@ const reviews = [
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "Director, InnovateCorp",
-    content: "Professional team that delivers on their promises every time.",
+    name: "Patrick Schrall",
+    role: "Kunde",
+    content: "Herr Stroe hat nach einem Wasserschaden meinen Keller saniert. Die Arbeiten wurden zuverlässig, sauber und professionell ausgeführt. Ich bin mit dem Ergebnis sehr zufrieden und kann ihn uneingeschränkt weiterempfehlen.",
     rating: 5,
+    link: "https://maps.app.goo.gl/yroMz892KSDCtq4A7"
   },
   {
     id: 3,
-    name: "Emily Brown",
-    role: "Founder, DigitalFirst",
-    content: "Transformed our business processes with innovative solutions.",
+    name: "Kar Dit",
+    role: "Kunde",
+    content: "Chris Stroe und sein Team haben hervorragende Arbeit geleistet. Die Pflasterung meiner Garageneinfahrt wurde präzise und ästhetisch ansprechend umgesetzt. Die Kommunikation war klar und professionell, und das Team war stets pünktlich und zuverlässig. Ich bin äußerst zufrieden und kann Stroe Garten und Landschaftsbau uneingeschränkt weiterempfehlen.",
     rating: 5,
+    link: "https://maps.app.goo.gl/Vq7iB4yHgUFS31Pg8"
   },
 ];
 
