@@ -48,9 +48,11 @@ export default function Navbar() {
             <button onClick={() => scrollToSection("usp")} className="text-white hover:text-gray-200">
               VORTEILE
             </button>
+            {/* 
             <Link href="/werke" className="text-white hover:text-gray-200">
               UNSERE WERKE
             </Link>
+            */}
             <Link href="/#contact">
               <Button variant="outline" className="bg-white text-[#92c43f] hover:bg-gray-100 border-none">
                 KONTAKT
@@ -92,6 +94,7 @@ export default function Navbar() {
             >
               VORTEILE
             </button>
+            {/*
             <Link
               href="/werke"
               className="block w-full text-left px-3 py-2 text-white hover:bg-[#83b136]"
@@ -99,6 +102,7 @@ export default function Navbar() {
             >
               UNSERE WERKE
             </Link>
+            */}
             <Link
               href="/#contact"
               className="block w-full text-left px-3 py-2 bg-white text-[#92c43f] hover:bg-gray-100 rounded"
