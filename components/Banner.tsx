@@ -7,19 +7,22 @@ import Link from "next/link";
 export default function Banner() {
   return (
     <section className="relative text-white py-12 sm:py-24 overflow-hidden">
-      {/* Background Video */}
+      {/* Hintergrundvideo */}
       <video
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0 opacity-50"
+        preload="auto"
+        disablePictureInPicture
+        controls={false}
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-50 pointer-events-none select-none"
       >
         <source src="/videos/GartenbauStroe.mp4" type="video/mp4" />
         Dein Browser unterstützt keine HTML5-Videos.
       </video>
 
-      {/* Content */}
+      {/* Inhalt */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
