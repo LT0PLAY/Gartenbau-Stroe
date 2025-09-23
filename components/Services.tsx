@@ -305,7 +305,7 @@ const services = [
           "Ob unterirdisches Tropfsystem, Versenkregner oder Kombinationen – wir planen und installieren alles fachgerecht und wartungsarm. Unser Ziel ist es, Technik so einzusetzen, dass sie Ihr Leben erleichtert und Ihre Außenanlage rund um die Uhr gepflegt und einladend bleibt. Vertrauen Sie auf unsere Kompetenz, Qualität und Liebe zum Detail."
       }
     ],
-    image: "/Pictures/BELEUCHTUNG_UND_BEWÄSSERUNG.webp",
+    image: "/Pictures/BELEUCHTUNG_UND_BEWAESSERUNG.webp",
     icon: "/Pictures/Beleuchtung.webp"
   },
   {
