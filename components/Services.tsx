@@ -418,8 +418,8 @@ export default function Services() {
                       )}
 
                       {/* Mobiler Button – fix mittig */}
-                        <div className="absolute bottom-15 inset-x-8 flex justify-center lg:hidden">
-                        <CarouselNext className="w-6/6 max-w-xs inline-flex items-center justify-center 
+                        <div className="absolute bottom-15 inset-x-29 flex justify-center lg:hidden">
+                        <CarouselNext className="w-5/6 max-w-xs inline-flex items-center justify-center 
                         bg-[#92c43f] text-black font-bold py-2 rounded-md text-sm 
                         shadow-md hover:bg-[#83b136] transition">
                          WEITERE SERVICES →
