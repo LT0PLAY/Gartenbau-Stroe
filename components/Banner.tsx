@@ -114,8 +114,8 @@ export default function Banner() {
           aria-label="Video abspielen"
         >
           <span className="flex items-center whitespace-nowrap gap-3 text-black text-sm sm:text-base font-bold bg-white rounded-full px-6 py-3 tracking-wide shadow-lg">
-            <Play className="h-5 w-5 shrink-0" />
-            MAC ENERGIESPARMODUS: TIPPEN ZUM ABSPIELEN
+            <Play className="h-3 w-3 shrink-0" />
+            APPLE ENERGIESPARMODUS: TIPPEN ZUM ABSPIELEN
           </span>
         </button>
       )}

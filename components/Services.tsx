@@ -356,7 +356,9 @@ export default function Services() {
             {services.map((service, index) => (
               <CarouselItem
                 key={index}
-                className={`min-h-screen carousel-item ${index === 0 ? "carousel-item-first" : ""}`}
+                className={`min-h-screen carousel-item ${
+                  index === 0 ? "carousel-item-first" : ""
+                }`}
               >
                 <div className="relative h-full">
                   {/* Background Image */}
@@ -389,31 +391,35 @@ export default function Services() {
 
                     {/* Description Section */}
                     <div
-                      ref={(el) => { descRefs.current[index] = el; }}
-                      className="w-full lg:w-1/3 p-4 lg:p-8 flex flex-col items-center lg:items-start bg-black/50 overflow-y-auto"
+                      ref={(el) => {
+                        descRefs.current[index] = el;
+                      }}
+                      className="relative w-full lg:w-1/3 p-4 lg:p-8 flex flex-col items-center lg:items-start bg-black/50 overflow-y-auto"
                     >
                       {Array.isArray((service as any).sections) ? (
-                        <div className="space-y-4">
-                          {(service as any).sections.map((sec: any, i: number) => (
-                            <div key={i}>
-                              <h4 className="text-lg font-semibold text-[#92c43f] mb-1 text-center lg:text-left">
-                                {sec.heading}
-                              </h4>
-                              <p className="text-sm sm:text-base lg:text-lg text-white text-center lg:text-left">
-                                {sec.content}
-                              </p>
-                            </div>
-                          ))}
+                        <div className="space-y-4 pb-16">
+                          {(service as any).sections.map(
+                            (sec: any, i: number) => (
+                              <div key={i}>
+                                <h4 className="text-lg font-semibold text-[#92c43f] mb-1 text-center lg:text-left">
+                                  {sec.heading}
+                                </h4>
+                                <p className="text-sm sm:text-base lg:text-lg text-white text-center lg:text-left">
+                                  {sec.content}
+                                </p>
+                              </div>
+                            )
+                          )}
                         </div>
                       ) : (
-                        <p className="text-sm sm:text-base lg:text-lg text-white text-center lg:text-left">
+                        <p className="text-sm sm:text-base lg:text-lg text-white text-center lg:text-left pb-16">
                           {(service as any).description}
                         </p>
                       )}
 
-                      {/* Mobile Button für nächste Services */}
-                      <CarouselNext className="mt-6 w-full lg:hidden bg-transparent text-[#92c43f] hover:text-[#83b136] font-bold tracking-wider">
-                        &lt; WEITERE SERVICES &gt;
+                      {/* Mobile Button fixiert unten */}
+                      <CarouselNext className="absolute bottom-0 left-0 w-full lg:hidden bg-[#92c43f] text-black font-bold py-3 text-center hover:bg-[#83b136] transition">
+                        WEITERE SERVICES →
                       </CarouselNext>
                     </div>
                   </div>
