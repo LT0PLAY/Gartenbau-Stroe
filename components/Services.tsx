@@ -342,7 +342,9 @@ export default function Services() {
   useEffect(() => {
     setTimeout(() => {
       const firstItem = document.querySelector(".carousel-item-first");
-      if (firstItem) firstItem.classList.add("animate-slide");
+      if (firstItem) {
+        firstItem.classList.add("animate-slide");
+      }
     }, 1000);
   }, []);
 
@@ -354,10 +356,12 @@ export default function Services() {
             {services.map((service, index) => (
               <CarouselItem
                 key={index}
-                className={`min-h-screen carousel-item ${index === 0 ? "carousel-item-first" : ""}`}
+                className={`min-h-screen carousel-item ${
+                  index === 0 ? "carousel-item-first" : ""
+                }`}
               >
                 <div className="relative h-full">
-                  {/* Background Image */}
+                  {/* Hintergrundbild */}
                   <div
                     className="absolute inset-0 z-0 opacity-50"
                     style={{
@@ -367,36 +371,35 @@ export default function Services() {
                     }}
                   />
 
-                  {/* Content */}
+                  {/* Inhalt */}
                   <div className="relative z-10 h-full flex flex-col lg:flex-row items-stretch">
-                    {/* Title Section */}
-                    <div className="w-full lg:w-1/3 flex items-center justify-center p-3 sm:p-4 lg:p-8">
+                    {/* Titel */}
+                    <div className="w-full lg:w-1/3 flex items-center justify-center p-4 lg:p-8">
                       <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#92c43f] text-center lg:text-left">
                         {service.title}
                       </h3>
                     </div>
 
-                    {/* Icon Section */}
-                    <div className="flex-1 relative flex items-end justify-center py-4 sm:py-8 lg:py-0">
+                    {/* Icon */}
+                    <div className="flex-1 relative flex items-end justify-center py-8 lg:py-0">
                       <img
                         src={service.icon}
                         alt={service.title}
-                        className="w-[22rem] h-[22rem] sm:w-[31.2rem] sm:h-[31.2rem] lg:w-[62.4rem] lg:h-[62.4rem] object-contain"
+                        className="w-[31.2rem] h-[31.2rem] sm:w-[41.6rem] sm:h-[41.6rem] lg:w-[62.4rem] lg:h-[62.4rem] object-contain"
                       />
                     </div>
 
-                    {/* Description Section */}
+                    {/* Beschreibung */}
                     <div
                       ref={(el) => {
                         descRefs.current[index] = el;
                       }}
-                      className="relative w-full lg:w-1/3 bg-black/50 flex flex-col"
+                      className="relative w-full lg:w-1/3 p-4 lg:p-8 flex flex-col items-center lg:items-start bg-black/50 overflow-y-auto"
                     >
-                      {/* Scrollbarer Inhalt */}
-                      <div className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8 pt-3 sm:pt-4 pb-24">
-                        {Array.isArray((service as any).sections) ? (
-                          <div className="space-y-4">
-                            {(service as any).sections.map((sec: any, i: number) => (
+                      {Array.isArray((service as any).sections) ? (
+                        <div className="space-y-4 pb-24">
+                          {(service as any).sections.map(
+                            (sec: any, i: number) => (
                               <div key={i}>
                                 <h4 className="text-lg font-semibold text-[#92c43f] mb-1 text-center lg:text-left">
                                   {sec.heading}
@@ -405,19 +408,21 @@ export default function Services() {
                                   {sec.content}
                                 </p>
                               </div>
-                            ))}
-                          </div>
-                        ) : (
-                          <p className="text-sm sm:text-base lg:text-lg text-white text-center lg:text-left">
-                            {(service as any).description}
-                          </p>
-                        )}
-                      </div>
+                            )
+                          )}
+                        </div>
+                      ) : (
+                        <p className="text-sm sm:text-base lg:text-lg text-white text-center lg:text-left pb-24">
+                          {(service as any).description}
+                        </p>
+                      )}
 
-                      {/* Sticky Bottom-Bar (nur Mobile) */}
-                      <div className="lg:hidden sticky bottom-0 left-0 w-full">
-                        <CarouselNext className="w-full bg-[#92c43f] text-black font-bold py-3 text-center hover:bg-[#83b136] transition">
-                          WEITERE SERVICES →
+                      {/* Mobiler Button – fix mittig */}
+                        <div className="absolute bottom-15 inset-x-8 flex justify-center lg:hidden">
+                        <CarouselNext className="w-6/6 max-w-xs inline-flex items-center justify-center 
+                        bg-[#92c43f] text-black font-bold py-2 rounded-md text-sm 
+                        shadow-md hover:bg-[#83b136] transition">
+                         WEITERE SERVICES →
                         </CarouselNext>
                       </div>
                     </div>
@@ -426,8 +431,6 @@ export default function Services() {
               </CarouselItem>
             ))}
           </CarouselContent>
-
-          {/* Desktop-Navigation */}
           <CarouselPrevious className="hidden sm:flex" />
           <CarouselNext className="hidden sm:flex" />
         </Carousel>
