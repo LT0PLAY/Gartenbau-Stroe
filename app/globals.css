@@ -1,48 +1,48 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 28, 28, 28;
-  --background-end-rgb: 28, 28, 28;
+/* Grundlayout im Footer-Look (zinc) */
+body {
+  @apply bg-zinc-900 text-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@layer base {
-  :root {
-    --background: 0 0% 11%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 13%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 13%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 84 49% 51%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 64%;
-    --accent: 84 49% 51%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 84 49% 51%;
-    --chart-1: 84 49% 51%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
-  }
+/* weiche Standard-Border */
+* {
+  @apply border-zinc-800;
 }
 
-@layer base {
-  * {
-    @apply border-border;
+/* Auswahlfarbe */
+::selection {
+  background: #92c43f;
+  color: #0b0b0b;
+}
+
+/* WICHTIG: keine globalen img/video Größen-Regeln mehr
+   (das hat dein Header-Logo hochgezogen) */
+
+/* ---- UI-Helper ---- */
+@layer components {
+  /* Frostige Box wie im Footer */
+  .frosted {
+    @apply bg-zinc-800/50 backdrop-blur-sm rounded-xl;
   }
-  body {
-    @apply bg-background text-foreground;
+
+  /* Mit Border/Shadow, wenn du mehr Absetzung willst */
+  .frosted-elevated {
+    @apply bg-zinc-800/50 backdrop-blur-sm rounded-xl
+           border border-zinc-800 shadow;
+  }
+
+  /* Dezenter Hover-Zoom wie im Footer */
+  .hover-zoom {
+    @apply transform transition-transform duration-200 hover:scale-105;
+  }
+
+  /* Dunkle Inputs für Kontaktformular */
+  .input-dark {
+    @apply bg-zinc-900 text-white placeholder-white/70
+           border border-zinc-800 rounded-md
+           focus:outline-none focus:ring-2 focus:ring-[#92c43f]/40 focus:border-zinc-600;
   }
 }
