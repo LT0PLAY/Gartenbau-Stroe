@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { useEffect, useRef } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -338,7 +337,6 @@ const services = [
 ];
 
 export default function Services() {
-  const [expandedDescription, setExpandedDescription] = useState<number | null>(null);
   const descRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
@@ -349,16 +347,6 @@ export default function Services() {
       }
     }, 1000);
   }, []);
-
-  const toggleDescription = (index: number) => {
-    const willExpand = expandedDescription !== index;
-    setExpandedDescription(willExpand ? index : null);
-    if (willExpand) {
-      requestAnimationFrame(() => {
-        descRefs.current[index]?.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    }
-  };
 
   return (
     <section id="services" className="bg-card min-h-screen">
@@ -401,53 +389,32 @@ export default function Services() {
 
                     {/* Description Section */}
                     <div
-                      ref={(el) => (descRefs.current[index] = el)}
-                      className="w-full lg:w-1/3 p-4 lg:p-8 flex flex-col items-center lg:items-start bg-black/50"
+                      ref={(el) => { descRefs.current[index] = el; }}
+                      className="w-full lg:w-1/3 p-4 lg:p-8 flex flex-col items-center lg:items-start bg-black/50 overflow-y-auto"
                     >
-                      <div
-                        className={`w-full lg:block ${
-                          expandedDescription === index
-                            ? "max-h-none"
-                            : "max-h-40 overflow-hidden lg:max-h-none"
-                        }`}
-                      >
-                        {Array.isArray((service as any).sections) ? (
-                          <div className="space-y-4">
-                            {(service as any).sections.map((sec: any, i: number) => (
-                              <div key={i}>
-                                <h4 className="text-lg font-semibold text-[#92c43f] mb-1 text-center lg:text-left">
-                                  {sec.heading}
-                                </h4>
-                                <p className="text-sm sm:text-base lg:text-lg text-white text-center lg:text-left">
-                                  {sec.content}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
-                        ) : (
-                          <p className="text-sm sm:text-base lg:text-lg text-white text-center lg:text-left">
-                            {(service as any).description}
-                          </p>
-                        )}
-                      </div>
+                      {Array.isArray((service as any).sections) ? (
+                        <div className="space-y-4">
+                          {(service as any).sections.map((sec: any, i: number) => (
+                            <div key={i}>
+                              <h4 className="text-lg font-semibold text-[#92c43f] mb-1 text-center lg:text-left">
+                                {sec.heading}
+                              </h4>
+                              <p className="text-sm sm:text-base lg:text-lg text-white text-center lg:text-left">
+                                {sec.content}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="text-sm sm:text-base lg:text-lg text-white text-center lg:text-left">
+                          {(service as any).description}
+                        </p>
+                      )}
 
-                      {/* Toggle button (mobile) */}
-                      <button
-                        onClick={() => toggleDescription(index)}
-                        className="mt-2 text-[#92c43f] hover:text-[#83b136] flex items-center gap-1 lg:hidden"
-                      >
-                        {expandedDescription === index ? (
-                          <>
-                            Weniger anzeigen
-                            <ChevronUp className="w-4 h-4" />
-                          </>
-                        ) : (
-                          <>
-                            Mehr anzeigen
-                            <ChevronDown className="w-4 h-4" />
-                          </>
-                        )}
-                      </button>
+                      {/* Mobile Button für nächste Services */}
+                      <CarouselNext className="mt-6 w-full lg:hidden bg-transparent text-[#92c43f] hover:text-[#83b136] font-bold tracking-wider">
+                        &lt; WEITERE SERVICES &gt;
+                      </CarouselNext>
                     </div>
                   </div>
                 </div>
