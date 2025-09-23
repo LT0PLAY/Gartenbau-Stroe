@@ -143,7 +143,7 @@ const services = [
           "Wasserflächen lassen sich wunderbar mit Stein, Holz oder Licht kombinieren und verwandeln jeden Garten in einen Ort der Entspannung. Garten- und Landschaftsbau Stroe plant und realisiert Ihre Wasseranlage von der Idee bis zur fertigen Umsetzung zuverlässig, kompetent und mit hohem gestalterischen Anspruch. In der Region rund um München sind wir Ihr Ansprechpartner für Teich- und Wasseranlagen mit Qualität und Charakter."
       }
     ],
-    image: "/Pictures/Hintergrund-5.webp",
+    image: "/Pictures/TEICH-und_WASSERANLAGEN.webp",
     icon: "/Pictures/Wasseranlagen.webp"
   },
   {
@@ -170,7 +170,7 @@ const services = [
           "In der gesamten Region rund um München ist Garten- und Landschaftsbau Stroe Ihr verlässlicher Partner für stilvollen Holz- und Zaunbau. Vertrauen Sie auf unsere Erfahrung, unser handwerkliches Können und unser Gespür für harmonische Gartengestaltung. Lassen Sie uns gemeinsam Ihre Außenanlage funktional und zugleich wohnlich gestalten – mit Holz in seiner schönsten Form."
       }
     ],
-    image: "/Pictures/Hintergrund-6.webp",
+    image: "/Pictures/HOLZ-UND_ZAUNBAU.webp",
     icon: "/Pictures/Zaunbau.webp"
   },
   {
@@ -197,7 +197,7 @@ const services = [
           "Jeder Stein wird sorgfältig platziert, jede Mauerlinie genau ausgerichtet – so entstehen langlebige Bauwerke, die Wind und Wetter standhalten und über viele Jahre Freude bereiten. In der Region rund um München steht Garten- und Landschaftsbau Stroe für hochwertige Mauer- und Steinarbeiten mit Stil und Substanz. Lassen Sie uns gemeinsam die Basis für Ihre neue Gartenstruktur legen – Stein für Stein, mit Herz und Hand."
       }
     ],
-    image: "/Pictures/Hintergrund-7.webp",
+    image: "/Pictures/Mauer_und_Steinarbeiten.webp",
     icon: "/Pictures/Mauer.webp"
   },
   {
@@ -224,7 +224,7 @@ const services = [
           "Mit modernem Gerät, geschultem Blick und ökologischer Verantwortung sorgen wir für gesunde Pflanzen, gepflegte Rasenflächen und ein harmonisches Gesamtbild. In der Region rund um München ist Garten- und Landschaftsbau Stroe Ihr zuverlässiger Partner für nachhaltige Gartenpflege. Vertrauen Sie auf Erfahrung, Gründlichkeit und das Gespür für den richtigen Schnitt zur richtigen Zeit."
       }
     ],
-    image: "/Pictures/Hintergrund-8.webp",
+    image: "/Pictures/GARTENPFLEGE_UND_INSTANTHALTUNG.webp",
     icon: "/Pictures/Gartenpflege.webp"
   },
   {
@@ -251,7 +251,7 @@ const services = [
           "Unser Team überwacht kontinuierlich Wetterdaten und reagiert sofort bei Bedarf. Wir garantieren maximale Sicherheit für Bewohner, Kunden, Mitarbeiter und Passanten. Garten- und Landschaftsbau Stroe steht für Verantwortung, Sorgfalt und professionelle Abläufe – damit Sie den Winter entspannt genießen können."
       }
     ],
-    image: "/Pictures/Hintergrund-9.webp",
+    image: "/Pictures/Winterdienst_Radlader.webp",
     icon: "/Pictures/Winterdienst.webp"
   },
   {
@@ -278,7 +278,7 @@ const services = [
           "Unsere Leistungen umfassen unter anderem die Kontrolle von Beleuchtung und Haustechnik, Mülltonnenservice, Reinigungsarbeiten im Außenbereich, Kleinreparaturen, saisonale Pflege sowie das Monitoring von Sicherheitsaspekten. Jeder Einsatz wird dokumentiert, unsere Ansprechpartner sind jederzeit erreichbar und passen Einsätze flexibel an. Mit Garten- und Landschaftsbau Stroe haben Sie einen Hausmeisterdienst an Ihrer Seite, der Ihre Immobilie rund um die Uhr im Blick behält – kompetent, diskret und engagiert."
       }
     ],
-    image: "/Pictures/Hintergrund-10.webp",
+    image: "/Pictures/Hausmeister.webp",
     icon: "/Pictures/Hausmeisterdienst.webp"
   },
   {
@@ -305,9 +305,36 @@ const services = [
           "Ob unterirdisches Tropfsystem, Versenkregner oder Kombinationen – wir planen und installieren alles fachgerecht und wartungsarm. Unser Ziel ist es, Technik so einzusetzen, dass sie Ihr Leben erleichtert und Ihre Außenanlage rund um die Uhr gepflegt und einladend bleibt. Vertrauen Sie auf unsere Kompetenz, Qualität und Liebe zum Detail."
       }
     ],
-    image: "/Pictures/Hintergrund-11.webp",
+    image: "/Pictures/BELEUCHTUNG_UND_BEWÄSSERUNG.webp",
     icon: "/Pictures/Beleuchtung.webp"
-  }
+  },
+  {
+  title: "ABRISSARBEITEN",
+  sections: [
+    {
+      heading: "Schnell, sicher und zuverlässig",
+      content:
+        "Abrissarbeiten erfordern Fachwissen, Erfahrung und die richtige Technik. Wir übernehmen den Abbruch von Gebäuden, Mauern und Außenanlagen professionell, sicher und effizient – stets mit Blick auf Ihre individuellen Anforderungen."
+    },
+    {
+      heading: "Umweltgerechte Entsorgung",
+      content:
+        "Bei allen Abrissarbeiten achten wir auf eine fachgerechte Sortierung und Entsorgung der Materialien. So stellen wir sicher, dass wiederverwertbare Stoffe in den Kreislauf zurückgeführt und Schadstoffe fachgerecht entsorgt werden."
+    },
+    {
+      heading: "Moderner Maschinenpark",
+      content:
+        "Mit leistungsstarken Geräten und modernen Maschinen sorgen wir für einen reibungslosen Ablauf – vom Rückbau kleinerer Objekte bis hin zu komplexen Abrissprojekten. Effizienz und Sicherheit stehen dabei an erster Stelle."
+    },
+    {
+      heading: "Alles aus einer Hand",
+      content:
+        "Von der Planung über den Abbruch bis zur Entsorgung bieten wir Ihnen ein komplettes Leistungspaket. Vertrauen Sie auf unsere Erfahrung und Kompetenz, wenn es um fachgerechte Abrissarbeiten geht."
+    }
+  ],
+  image: "/Pictures/Abrissarbeiten.webp",
+  icon: "/Pictures/Abriss.webp"
+}
 ];
 
 export default function Services() {
