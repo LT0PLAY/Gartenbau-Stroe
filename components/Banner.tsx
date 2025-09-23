@@ -14,8 +14,8 @@ export default function Banner() {
   const tryPlay = async (v: HTMLVideoElement) => {
     try {
       v.muted = true;
-      // @ts-expect-error iOS compatibility
-      v.setAttribute?.("playsinline", "");
+      // iOS/Safari: playsinline sicherstellen
+      v.setAttribute("playsinline", "");
       if (v.paused) {
         await v.play();
       }
