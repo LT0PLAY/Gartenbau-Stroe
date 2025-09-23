@@ -22,7 +22,7 @@ const services = [
       {
         heading: "Ihre Wünsche im Mittelpunkt",
         content:
-          "Ob pflegeleichte Lösung, Anlage mit Wasser und Stein, Terrasse mit gemütlicher Sitzecke oder Rückzugsort mit blühenden Pflanzen – wir setzen Ihre Ideen professionell um und achten dabei auf Qualität, Funktionalität und Ästhetik."
+          "Ob pflegeleichte Lösung, Anlage mit Wasser und Stein, Terrasse mit gemütlicher Sitzecke oder Rückzugsort mit blühenden Pflanzen. Wir setzen Ihre Ideen professionell um und achten dabei auf Qualität, Funktionalität und Ästhetik."
       },
       {
         heading: "Unser Weg zu Ihrem Traumgarten",
