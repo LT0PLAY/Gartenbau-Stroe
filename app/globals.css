@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Grundlayout im Footer-Look (zinc) */
+body {
+  @apply bg-zinc-900 text-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* weiche Standard-Border */
+* {
+  @apply border-zinc-800;
+}
+
+/* Auswahlfarbe */
+::selection {
+  background: #92c43f;
+  color: #0b0b0b;
+}
+
+/* WICHTIG: keine globalen img/video Größen-Regeln mehr
+   (das hat dein Header-Logo hochgezogen) */
+
+/* ---- UI-Helper ---- */
+@layer components {
+  /* Frostige Box wie im Footer */
+  .frosted {
+    @apply bg-zinc-800/50 backdrop-blur-sm rounded-xl;
+  }
+
+  /* Mit Border/Shadow, wenn du mehr Absetzung willst */
+  .frosted-elevated {
+    @apply bg-zinc-800/50 backdrop-blur-sm rounded-xl
+           border border-zinc-800 shadow;
+  }
+
+  /* Dezenter Hover-Zoom wie im Footer */
+  .hover-zoom {
+    @apply transform transition-transform duration-200 hover:scale-105;
+  }
+
+  /* Dunkle Inputs für Kontaktformular */
+  .input-dark {
+    @apply bg-zinc-900 text-white placeholder-white/70
+           border border-zinc-800 rounded-md
+           focus:outline-none focus:ring-2 focus:ring-[#92c43f]/40 focus:border-zinc-600;
+  }
+}
