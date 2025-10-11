@@ -10,15 +10,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "GARTEN- UND LANDSCHAFTSBAU STROE",
   description: "Ihre vertrauenswürdige Anlaufstelle für professionelle Dienstleistungen",
+<<<<<<< HEAD
   icons: {
     icon: "/Pictures/favicon.png", // Pfad korrekt zu deiner Struktur
   },
+=======
+  icons: { icon: "/Pictures/favicon.png" },
+>>>>>>> 5c40ffab02fe08b65f994b7ad89f6a6b821d3266
   openGraph: {
     title: "Garten- und Landschaftsbau Stroe",
     description:
       "Robust, Schnell & Stark – Ihr Partner für Garten- & Landschaftsbau in Bayern.",
     url: "https://stroe-galabau.de",
     siteName: "Garten- und Landschaftsbau Stroe",
+<<<<<<< HEAD
     images: [
       {
         url: "https://stroe-galabau.de/Pictures/social-preview.png",
@@ -27,6 +32,9 @@ export const metadata: Metadata = {
         alt: "Vorschau Garten- und Landschaftsbau Stroe",
       },
     ],
+=======
+    images: [{ url: "/Pictures/social-preview.png", width: 1200, height: 630, alt: "Preview" }],
+>>>>>>> 5c40ffab02fe08b65f994b7ad89f6a6b821d3266
     locale: "de_DE",
     type: "website",
   },
@@ -34,7 +42,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Garten- und Landschaftsbau Stroe",
     description: "Ihr Profi für Garten- und Landschaftsbau – Robust, Schnell & Stark.",
+<<<<<<< HEAD
     images: ["https://stroe-galabau.de/Pictures/social-preview.png"],
+=======
+    images: ["/Pictures/social-preview.png"],
+>>>>>>> 5c40ffab02fe08b65f994b7ad89f6a6b821d3266
   },
 };
 
