@@ -13,8 +13,8 @@ export default function Impressum() {
               <p className="font-semibold text-white">Unternehmen: Garten- und Landschaftsbau Stroe</p>
               <p>Inhaber: Christian Stroe</p>
               <div>
-                <p>Beuerbergerstraße 38</p>
-                <p>82549 Königsdorf</p>
+                <p>Gewerbering 5</p>
+                <p>82544 Egling</p>
                 <p>Bayern, Deutschland</p>
               </div>
             </div>
@@ -30,7 +30,7 @@ export default function Impressum() {
 
           <div>
             <h2 className="text-xl font-semibold mb-3 text-white">Verantwortlich i.S.d. § 18 Abs. 2 MStV</h2>
-            <p>Christian Stroe, Beuerbergerstraße 38, 82549 Königsdorf</p>
+            <p>Christian Stroe, 82544 Egling, Gewerbering 5</p>
           </div>
 
           <div>

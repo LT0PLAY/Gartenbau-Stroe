@@ -21,8 +21,8 @@ export default function Footer() {
                 </div>
                 <div className="pl-12 sm:pl-16 space-y-1">
                   <p className="text-sm sm:text-base text-white/90">Garten- und Landschaftsbau Stroe</p>
-                  <p className="text-sm sm:text-base text-white/90">Beuerbergerstraße 38</p>
-                  <p className="text-sm sm:text-base text-white/90">82549 Königsdorf</p>
+                  <p className="text-sm sm:text-base text-white/90">Gewerbering 5</p>
+                  <p className="text-sm sm:text-base text-white/90">82544 Egling</p>
                   <p className="text-sm sm:text-base text-white/90">Bayern, Deutschland</p>
                 </div>
               </div>

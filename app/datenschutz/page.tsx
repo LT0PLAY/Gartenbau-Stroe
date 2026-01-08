@@ -17,8 +17,8 @@ export default function Datenschutz() {
             <div className="mt-2 space-y-1">
               <p>Garten- und Landschaftsbau Stroe</p>
               <p>Inhaber: Christian Stroe</p>
-              <p>Beuerbergerstraße 38</p>
-              <p>82549 Königsdorf</p>
+              <p>Gewerbering 5</p>
+              <p>82544 Egling</p>
               <p>Bayern, Deutschland</p>
               <p>Telefon: +49 1522 3230374</p>
               <p>E-Mail: kundenservice@stroe-galabau.de</p>
