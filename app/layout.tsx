@@ -60,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "logo": "https://stroe-galabau.de/Pictures/favicon.png",
               "image": "https://stroe-galabau.de/Pictures/social-preview.png",
               "description":
-                "Robust, Schnell & Stark – Ihr Partner für Garten- & Landschaftsbau in Bayern.",
+                "Robust, Schnell & Stark - Ihr Partner für Garten- & Landschaftsbau in Bayern.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Gewerbering 5",
@@ -69,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "addressRegion": "Bayern",
                 "addressCountry": "DE",
               },
-              "telephone": "+49 0000 000000", // hier echte Nummer eintragen
+              "telephone": "+49 1522 3230374", // hier echte Nummer eintragen
               "sameAs": [
                 "https://www.instagram.com/DEIN_INSTAGRAM_LINK",
                 "https://www.facebook.com/DEIN_FACEBOOK_LINK",

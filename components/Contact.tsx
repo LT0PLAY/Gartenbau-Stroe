@@ -147,8 +147,8 @@ export default function Contact() {
                           <h3 className="text-sm font-semibold text-white">Adresse</h3>
                           <div className="space-y-1 text-sm sm:text-base text-gray-400">
                             <p>Garten- und Landschaftsbau Stroe</p>
-                            <p>Beuerbergerstraße 38</p>
-                            <p>82549 Königsdorf</p>
+                            <p>Gewerbering 5</p>
+                            <p>82544 Egling</p>
                             <p>Bayern, Deutschland</p>
                           </div>
                         </div>
