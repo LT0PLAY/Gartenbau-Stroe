@@ -63,9 +63,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "Robust, Schnell & Stark – Ihr Partner für Garten- & Landschaftsbau in Bayern.",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Beuerbergerstraße 38",
-                "addressLocality": "Königsdorf",
-                "postalCode": "82549",
+                "streetAddress": "Gewerbering 5",
+                "addressLocality": "Egling",
+                "postalCode": "82544",
                 "addressRegion": "Bayern",
                 "addressCountry": "DE",
               },
